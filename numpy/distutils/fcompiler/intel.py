@@ -163,7 +163,7 @@ class IntelVisualFCompiler(BaseIntelFCompiler):
     module_include_switch = '/I'
 
     def get_flags(self):
-        opt = ['/nologo', '/MD', '/nbs', '/names:lowercase', '/assume:underscore']
+        opt = ['/nologo', '/MT', '/nbs', '/names:lowercase', '/assume:underscore']
         return opt
 
     def get_flags_free(self):
